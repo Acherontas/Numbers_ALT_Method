@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1758895775 source:/home/acherontas/codeblocks/recreate_number_arm64/gen_alt.cpp
+	"gen_alt.h"
+	"sum_cdi.h"
+
+1758890081 /home/acherontas/codeblocks/recreate_number_arm64/gen_alt.h
+	<string>
+	<math.h>
+	<iomanip>
+	<sstream>
+	<iostream>
+
+1758893193 /home/acherontas/codeblocks/recreate_number_arm64/sum_cdi.h
+	<iostream>
+	<string>
+	<math.h>
+	<iomanip>
+
+1758894257 source:/home/acherontas/codeblocks/recreate_number_arm64/sum_cdi.cpp
+	"sum_cdi.h"
+
+1758896345 source:/home/acherontas/codeblocks/recreate_number_arm64/main.cpp
+	<iostream>
+	<string>
+	<iomanip>
+	<math.h>
+	<sstream>
+	"gen_alt.h"
+	"sum_cdi.h"
+

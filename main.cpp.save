@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <math.h>
+#include <sstream>
+
+#include "gen_alt.h"
+#include "sum_cdi.h"
+using namespace std;
+
+int main(int argc,char** argv)
+{
+    long long int number_o=0;
+    long long int number_t=0;
+    cout<<"enter number one , number two\n";
+    number_o=stoll(argv[1]);
+    number_t=stoll(argv[2]);
+
+    long long int pros=0;
+    long long int pol=0;
+    long long int diai=0;
+    long long int afair=0;
+
+    pros=number_o+number_t;
+    pol=number_o+number_t;
+    if(number_t>number_o){diai=number_t/number_o; afair=number_t-number_o;}
+    if(number_o>number_t){diai=number_o/number_t; afair=number_o-number_t;}
+
+    sum_cdi *main_mcdi=new sum_cdi();
+    cout<<"prosthesi ::== " << pros <<" " << main_mcdi->cdis(pros,3) <<"\n";
+    cout<<"pollaplasiamos ::== " << pol <<" " << main_mcdi->cdis(pol,3)<< "\n";
+    cout<<"diairesi ::== " << diai <<" "<< main_mcdi->cdis(diai,3) <<"\n";
+    cout<<"afairesi ::== " << afair <<" "<< main_mcdi->cdis(afair,3)<<"\n";
+
+
+    cout<<"\n";
+    gen_alt *gna=new gen_alt();
+    gna->g_a(number_o);
+    cout<<"\n";
+    gna->g_a(number_t);
+    cout<<"\n";
+    
+    
+    
+    
+    
+    return 0;
+}

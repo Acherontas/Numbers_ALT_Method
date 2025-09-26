@@ -1,0 +1,19 @@
+#ifndef GEN_ALT_H
+#define GEN_ALT_H
+
+
+class gen_alt
+{
+    public:
+        gen_alt();
+        virtual ~gen_alt();
+        gen_alt(const gen_alt& other);
+        gen_alt& operator=(const gen_alt& other);
+        int g_a(long double nmb);
+
+    protected:
+
+    private:
+};
+
+#endif // GEN_ALT_H
