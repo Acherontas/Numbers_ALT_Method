@@ -27,7 +27,7 @@ int main(int argc,char** argv)
     long long int afair_t=0;
 
     pros=number_o+number_t;
-    pol=number_o+number_t;
+    pol=number_o*number_t;
     if(number_t>number_o){diai=number_t/number_o; afair=number_t-number_o;}
     if(number_o>number_t){diai=number_o/number_t; afair=number_o-number_t;}
     if(number_t<number_o){diai_t=number_t/number_o; afair_t=number_t-number_o;}
@@ -59,7 +59,7 @@ int main(int argc,char** argv)
 
     cout<<"Generating new result set \n";
     pros=number_o+number_t;
-    pol=number_o+number_t;
+    pol=number_o*number_t;
     if(number_t>number_o){diai=number_t/number_o; afair=number_t-number_o;}
     if(number_o>number_t){diai=number_o/number_t; afair=number_o-number_t;}
     if(number_t<number_o){diai_t=number_t/number_o; afair_t=number_t-number_o;}
